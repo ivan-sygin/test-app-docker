@@ -2,6 +2,10 @@ from typing import Union
 import os
 from fastapi import FastAPI
 
+import dotenv
+
+dotenv.load_dotenv()
+
 app = FastAPI()
 
 
