@@ -7,6 +7,9 @@ WORKDIR /code
 COPY ./requirements.txt /code/requirements.txt
 
 # 
+COPY ./.env /code/.env
+
+# 
 RUN pip install --no-cache-dir -r /code/requirements.txt
 
 # 
